@@ -13,6 +13,14 @@
 		4F13D8332C5B21E2005D7272 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4F13D8322C5B21E2005D7272 /* Base */; };
 		4F13D83F2C5B223C005D7272 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F13D83E2C5B223C005D7272 /* Movie.swift */; };
 		4F13D8422C5B2257005D7272 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F13D8412C5B2257005D7272 /* Video.swift */; };
+		4F13D8442C5B27D2005D7272 /* PosterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F13D8432C5B27D2005D7272 /* PosterCell.swift */; };
+		4F13D8462C5B27EC005D7272 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F13D8452C5B27EC005D7272 /* SectionHeaderView.swift */; };
+		4F13D8482C5B2807005D7272 /* YoutubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F13D8472C5B2807005D7272 /* YoutubeViewController.swift */; };
+		4F13D84B2C5B5FD2005D7272 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4F13D84A2C5B5FD2005D7272 /* SnapKit */; };
+		4F13D84D2C5B7FB2005D7272 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F13D84C2C5B7FB2005D7272 /* MainViewModel.swift */; };
+		4F13D8512C5C62F0005D7272 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F13D8502C5C62F0005D7272 /* NetworkManager.swift */; };
+		4F13D8542C5C6484005D7272 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 4F13D8532C5C6484005D7272 /* RxCocoa */; };
+		4F13D8572C5C996E005D7272 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 4F13D8562C5C996E005D7272 /* YouTubeiOSPlayerHelper */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,11 @@
 		4F13D8342C5B21E2005D7272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F13D83E2C5B223C005D7272 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		4F13D8412C5B2257005D7272 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		4F13D8432C5B27D2005D7272 /* PosterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterCell.swift; sourceTree = "<group>"; };
+		4F13D8452C5B27EC005D7272 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		4F13D8472C5B2807005D7272 /* YoutubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeViewController.swift; sourceTree = "<group>"; };
+		4F13D84C2C5B7FB2005D7272 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		4F13D8502C5C62F0005D7272 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +44,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F13D8542C5C6484005D7272 /* RxCocoa in Frameworks */,
+				4F13D84B2C5B5FD2005D7272 /* SnapKit in Frameworks */,
+				4F13D8572C5C996E005D7272 /* YouTubeiOSPlayerHelper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +72,12 @@
 		4F13D8252C5B21E1005D7272 /* NetflixClone */ = {
 			isa = PBXGroup;
 			children = (
+				4F13D84E2C5C62CA005D7272 /* Common */,
 				4F13D83B2C5B2207005D7272 /* App */,
 				4F13D83C2C5B220B005D7272 /* Model */,
 				4F13D83A2C5B21E9005D7272 /* View */,
 				4F13D83D2C5B2212005D7272 /* ViewModel */,
 				4F13D8262C5B21E1005D7272 /* AppDelegate.swift */,
-				4F13D82A2C5B21E1005D7272 /* MainViewController.swift */,
 				4F13D82F2C5B21E2005D7272 /* Assets.xcassets */,
 				4F13D8312C5B21E2005D7272 /* LaunchScreen.storyboard */,
 				4F13D8342C5B21E2005D7272 /* Info.plist */,
@@ -72,6 +88,10 @@
 		4F13D83A2C5B21E9005D7272 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4F13D82A2C5B21E1005D7272 /* MainViewController.swift */,
+				4F13D8472C5B2807005D7272 /* YoutubeViewController.swift */,
+				4F13D8432C5B27D2005D7272 /* PosterCell.swift */,
+				4F13D8452C5B27EC005D7272 /* SectionHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -95,8 +115,17 @@
 		4F13D83D2C5B2212005D7272 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				4F13D84C2C5B7FB2005D7272 /* MainViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4F13D84E2C5C62CA005D7272 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4F13D8502C5C62F0005D7272 /* NetworkManager.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,6 +144,11 @@
 			dependencies = (
 			);
 			name = NetflixClone;
+			packageProductDependencies = (
+				4F13D84A2C5B5FD2005D7272 /* SnapKit */,
+				4F13D8532C5C6484005D7272 /* RxCocoa */,
+				4F13D8562C5C996E005D7272 /* YouTubeiOSPlayerHelper */,
+			);
 			productName = NetflixClone;
 			productReference = 4F13D8232C5B21E1005D7272 /* NetflixClone.app */;
 			productType = "com.apple.product-type.application";
@@ -143,6 +177,11 @@
 				Base,
 			);
 			mainGroup = 4F13D81A2C5B21E1005D7272;
+			packageReferences = (
+				4F13D8492C5B5FD2005D7272 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				4F13D8522C5C6484005D7272 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				4F13D8552C5C996E005D7272 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */,
+			);
 			productRefGroup = 4F13D8242C5B21E1005D7272 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -169,10 +208,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F13D8512C5C62F0005D7272 /* NetworkManager.swift in Sources */,
 				4F13D82B2C5B21E1005D7272 /* MainViewController.swift in Sources */,
+				4F13D8482C5B2807005D7272 /* YoutubeViewController.swift in Sources */,
+				4F13D8462C5B27EC005D7272 /* SectionHeaderView.swift in Sources */,
+				4F13D8442C5B27D2005D7272 /* PosterCell.swift in Sources */,
 				4F13D8272C5B21E1005D7272 /* AppDelegate.swift in Sources */,
 				4F13D83F2C5B223C005D7272 /* Movie.swift in Sources */,
 				4F13D8422C5B2257005D7272 /* Video.swift in Sources */,
+				4F13D84D2C5B7FB2005D7272 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +429,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4F13D8492C5B5FD2005D7272 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		4F13D8522C5C6484005D7272 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.7.1;
+			};
+		};
+		4F13D8552C5C996E005D7272 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/youtube/youtube-ios-player-helper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4F13D84A2C5B5FD2005D7272 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F13D8492C5B5FD2005D7272 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		4F13D8532C5C6484005D7272 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F13D8522C5C6484005D7272 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		4F13D8562C5C996E005D7272 /* YouTubeiOSPlayerHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F13D8552C5C996E005D7272 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
+			productName = YouTubeiOSPlayerHelper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4F13D81B2C5B21E1005D7272 /* Project object */;
 }
